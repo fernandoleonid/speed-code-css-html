@@ -1,0 +1,33 @@
+.spinner {
+    width: 100px;
+    height: 100px;
+    border: 10px solid black;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.spinner.black {
+    border-color: #808080;
+    border-top-color: black;
+}
+
+.spinner.red {
+    border-color: lightcoral;
+    border-top-color:crimson;
+}
+
+.spinner.blue {
+    border-color: lightblue;
+    border-top-color: blue;
+}
+
+.spinner.green {
+    border-color: lightgreen;
+    border-top-color: green;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
