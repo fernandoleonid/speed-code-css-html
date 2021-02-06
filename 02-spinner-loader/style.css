@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: black;
+    color: whitesmoke;
+    font: italic 2em arial;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 85vh;
+    background-color: black;
+}
+
+main>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 10px blue;
+}
+
+footer {
+    background-color: black;
+    color: whitesmoke;
+    font: italic .8em/5vh arial;
+    text-align: center;
+}
