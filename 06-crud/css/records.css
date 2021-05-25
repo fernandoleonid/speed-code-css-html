@@ -1,0 +1,52 @@
+.records {
+    text-align: left;
+    border-collapse: collapse;
+    user-select: none;
+}
+
+.records thead {
+    background-color: #505050;
+    color: whitesmoke;
+    height: 50px;
+}
+
+.records thead th {
+    padding: 0 20px;
+}
+
+.records tbody td {
+    height: 50px;
+    border-bottom: 1px solid #50505030;
+    padding: 0 20px;
+}
+
+.records thead th:last-child,
+.records tbody td:last-child{
+    text-align: center;
+    width: 250px;
+}
+
+.records tr:hover{
+    background-color: #50505030;
+}
+
+@media (max-width:480px) {
+    .records thead {
+        display: none;
+    }
+    .records tbody td:not(:first-child){
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+    }
+    .records tbody td {
+        border: 0;
+    }
+    .records tbody tr {
+        box-shadow: 0 2px 5px #50505050;
+    }
+    .records tbody tr:hover{
+        background-color: transparent;
+    }
+}

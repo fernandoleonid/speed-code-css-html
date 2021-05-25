@@ -1,0 +1,20 @@
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 20px;
+}
+
+main>button{
+    align-self: flex-start;
+}
+
+@media (max-width:480px) {
+    main {
+        padding: 0;
+    }
+    main>button {
+        align-self: center;
+        margin-top: 20px;
+    }
+}
