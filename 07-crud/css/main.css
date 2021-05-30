@@ -1,20 +1,24 @@
 main {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    margin: 5vh auto;
     padding: 50px;
     gap: 20px;
-}
-
-main>button{
-    align-self: flex-start;
+    box-shadow: 2px 2px 10px #CCC;
+    flex-grow: 1;
+    /* position: relative; */
 }
 
 @media (max-width:480px) {
     main {
         padding: 0;
+        margin: 100px 0 0 0;
+        width: 100%;
+        box-shadow: none;
     }
     main>button {
-        align-self: center;
-        margin-top: 20px;
+        align-self: stretch;
     }
 }

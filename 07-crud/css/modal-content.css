@@ -1,18 +1,19 @@
 .modal-content {
     display: flex;
     flex-direction: column;
-    width: 50vw;
-    background-color: white;
-    margin: 15vh auto;
     gap: 20px;
-    box-shadow: 0 0 10px black;
-    border-radius: 3px;
+    width: 50vw;
+    margin: 15vh auto;
+    padding-bottom: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 10px black;
     user-select: none;
 }
 
 @media (max-width:480px) {
     .modal-content {
+        margin: 0;
         width: 100%;
-        height: 100%;
+        position: fixed;
     }
 }

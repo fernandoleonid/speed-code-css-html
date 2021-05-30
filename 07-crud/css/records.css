@@ -1,24 +1,29 @@
 .records {
     text-align: left;
-    border-collapse: collapse;
     user-select: none;
-}
-
-.records thead {
-    background-color: #505050;
-    color: whitesmoke;
-    height: 50px;
+    width: 100%;
 }
 
 .records thead th {
+    height: 50px;
     padding: 0 20px;
+    color: black;
+    background-color: var(--primary-color);
+    font-size: 1.2rem;
+    /* background-color: black;
+    color: #f5d654; */
 }
+
+/* .records tbody tr:nth-of-type(even) {
+    background-color: #f1c50e;
+} */
 
 .records tbody td {
     height: 50px;
-    border-bottom: 1px solid #50505030;
+    /* border-bottom: 1px solid #50505030; */
     padding: 0 20px;
 }
+
 
 .records thead th:last-child,
 .records tbody td:last-child{
@@ -26,27 +31,62 @@
     width: 250px;
 }
 
-.records tr:hover{
-    background-color: #50505030;
+.records tbody tr:hover{
+    background-color: var(--secundary-color);
 }
 
 @media (max-width:480px) {
+    .records{
+        /* border-collapse:separate;  */
+        border-spacing: 5px;
+    }
     .records thead {
         display: none;
     }
+    .records tbody tr{
+        box-shadow: 0px 1px 3px #CCC;
+        /* border-bottom: 10px solid #000; */
+        /* background-color: var(--secundary-color); */
+    }
     .records tbody td:not(:first-child){
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 20px;
+        justify-content: space-between;
+        /* justify-content: flex-start; */
+        /* align-items: center; */
+        /* gap: 20px; */
     }
-    .records tbody td {
-        border: 0;
+    /* .records tbody td:first-child{ */
+        /* background-color: var(--secundary-color); */
+    /* } */
+
+    .records tbody td{
+        margin: 10px 0;
+        /* border-bottom: 4px solid var(--primary-color); */
     }
-    .records tbody tr {
+
+    /* .records tbody td:first-child{
+        font-weight: 900;
+        background-color: var(--primary-color);
+    } */
+    /* .records tbody td { */
+        /* border: 0; */
+        /* border-bottom: 10px solid #000; */
+    /* } */
+
+    /* .records tbody tr:hover{
+        background-color: transparent;
+    } */
+
+    .records tbody tr:hover{
+        background-color: white;
+    }
+    /* .records tbody tr {
         box-shadow: 0 2px 5px #50505050;
+    } */
+    /* .records tbody tr:nth-child(even){
+        background-color: #e0e0e0;
     }
     .records tbody tr:hover{
-        background-color: transparent;
-    }
+        background-color: none !important;
+    } */
 }

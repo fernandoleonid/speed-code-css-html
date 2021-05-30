@@ -4,13 +4,14 @@
     outline-style: none;
     border-style: none;
     box-shadow: 0 0 2px black;
-    border-radius: 3px;
+    /* border-radius: 3px; */
     padding: 0 10px;
     font-size: 1rem;
 }
 
 .modal-field:focus{
-    border: 2px solid #1fb6ff;
+    border: 2px solid var(--primary-color);
+    box-shadow: 0px 0px 3px var(--primary-color);
 }
 
 @media (max-width:480px) {

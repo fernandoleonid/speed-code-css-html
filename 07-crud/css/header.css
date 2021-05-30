@@ -1,14 +1,22 @@
 .header {
-    height: 100px;
-    background-color: #505050;
-    color: whitesmoke;
-    font-size: 1.5rem;
+    height: 70px;
+    background-color: var(--primary-color);
     text-align: center;
-    line-height: 100px;
+    line-height: 60px;
+    box-shadow: 0 1px 2px #ccc;
+}
+
+.header h1{
+    color: black;
+    font-size: 2rem;
 }
 
 @media (max-width:480px) {
-    .header{
-        font-size: 1rem;
+    .header {
+        position: fixed;
+        width: 100%;
+    }
+    .header h1{
+        font-size: 1.5rem;
     }
 }
