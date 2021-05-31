@@ -1,14 +1,13 @@
 'use strict'
 
-const openModal = () => document.querySelector('#modal')
+const openModal = () => document.getElementById('modal')
     .classList.add('active')
-                                
-const closeModal = () => document.querySelector('#modal')
-    .classList.remove('active')
-                                                               
 
-document.querySelector('#cadastrarCliente')
+const closeModal = () => document.getElementById('modal')
+    .classList.remove('active')
+
+document.getElementById('cadastrarCliente')
     .addEventListener('click', openModal)
 
-document.querySelector('#closeModal')
+document.getElementById('modalClose')
     .addEventListener('click', closeModal)

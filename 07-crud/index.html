@@ -5,30 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;0,700;1,200;1,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/records.css">
     <link rel="stylesheet" href="css/modal.css">
-    <link rel="stylesheet" href="css/modal-content.css">
-    <link rel="stylesheet" href="css/modal-header.css">
-    <link rel="stylesheet" href="css/modal-close.css">
-    <link rel="stylesheet" href="css/modal-form.css">
-    <link rel="stylesheet" href="css/modal-field.css">
-    <link rel="stylesheet" href="css/modal-footer.css">
     <script src="main.js" defer></script>
     <title>CRUD</title>
 </head>
 <body>
-    <header class="header">
+    <header>
         <h1 class="header-title">Cadastro de Clientes</h1>
     </header>
     <main>
-        <button class="button blue" id="cadastrarCliente">Cadastrar Cliente</button>
+        <button type="button" class="button blue mobile" id="cadastrarCliente">Cadastrar Cliente</button>
         <table class="records">
             <thead>
                 <tr>
@@ -43,41 +33,31 @@
                 <tr>
                     <td>Maria</td>
                     <td>maria@gmail.com</td>
-                    <td>(11) 97171-4141</td>
+                    <td>(11) 97165-1111</td>
                     <td>Anapolis</td>
                     <td>
-                        <button class="button green">editar</button>
-                        <button class="button red">excluir</button>
+                        <button type="button" class="button green">editar</button>
+                        <button type="button" class="button red">excluir</button>
                     </td>
                 </tr>
                 <tr>
                     <td>João Pedro</td>
                     <td>joao@gmail.com</td>
-                    <td>(11) 97171-4141</td>
+                    <td>(11) 97165-2222</td>
                     <td>Jandira</td>
                     <td>
-                        <button class="button green">editar</button>
-                        <button class="button red">excluir</button>
+                        <button type="button" class="button green">editar</button>
+                        <button type="button" class="button red">excluir</button>
                     </td>
                 </tr>
                 <tr>
                     <td>Jose da Silva</td>
-                    <td>Jose@gmail.com</td>
-                    <td>(11) 97171-4141</td>
+                    <td>jose@gmail.com</td>
+                    <td>(11) 97165-3333</td>
                     <td>São Roque</td>
                     <td>
-                        <button class="button green">editar</button>
-                        <button class="button red">excluir</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Maria</td>
-                    <td>maria@gmail.com</td>
-                    <td>(11) 97171-4141</td>
-                    <td>Anapolis</td>
-                    <td>
-                        <button class="button green">editar</button>
-                        <button class="button red">excluir</button>
+                        <button type="button" class="button green">editar</button>
+                        <button type="button" class="button red">excluir</button>
                     </td>
                 </tr>
             </tbody>
@@ -85,14 +65,14 @@
         <div class="modal" id="modal">
             <div class="modal-content">
                 <header class="modal-header">
-                    <h1>Novo Cliente</h1>
-                    <span class="modal-close" id="closeModal">&#10006;</span>
+                    <h2>Novo Cliente</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
                 </header>
                 <form class="modal-form">
-                    <input type="text" class="modal-field" placeholder="Nome do Cliente" >
-                    <input type="email" class="modal-field" placeholder="E-mail do Cliente" >
-                    <input type="text" class="modal-field" placeholder="Celular do Cliente" >
-                    <input type="text" class="modal-field" placeholder="Cidade do Cliente" >
+                    <input type="text" class="modal-field" placeholder="Nome do Cliente">
+                    <input type="email" class="modal-field" placeholder="e-mail do Cliente">
+                    <input type="text" class="modal-field" placeholder="Celular do Cliente">
+                    <input type="text" class="modal-field" placeholder="Cidade do Cliente">
                 </form>
                 <footer class="modal-footer">
                     <button class="button green">Salvar</button>
@@ -102,7 +82,7 @@
         </div>
     </main>
     <footer>
-        <div>Copyright &copy; Prof. Fernando Leonid</div>
+        Copyright &copy; Prof. Fernando Leonid
     </footer>
 </body>
 </html>
