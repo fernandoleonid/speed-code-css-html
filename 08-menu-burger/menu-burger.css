@@ -1,0 +1,61 @@
+.container-menu-burger{
+    --menu-size: 48px;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: var(--menu-size);
+    width: var(--menu-size);
+}
+
+.menu-burger,
+.menu-burger::before,
+.menu-burger::after{
+    content: "";
+    position: absolute;
+    display: block;
+    height: calc(var(--menu-size) / 10);
+    width: var(--menu-size);
+    background-color: #FFCC00;
+    border-radius: 5px;
+    transition: all .3s linear;
+}
+
+.menu-burger::before{
+    transform: translateY(calc(var(--menu-size) / -3));
+}
+
+.menu-burger::after{
+    transform: translateY(calc(var(--menu-size) / 3));
+}
+
+.container-menu-burger.middle .menu-burger{
+    width: calc(var(--menu-size) + 50%) ;
+}
+
+.container-menu-burger.ascending .menu-burger::before {
+    width: calc(var(--menu-size) + 50%)
+}
+.container-menu-burger.ascending .menu-burger::after {
+    width: calc(var(--menu-size) - 50%)
+}
+
+.container-menu-burger.descending .menu-burger::before {
+    width: calc(var(--menu-size) - 50%)
+}
+.container-menu-burger.descending .menu-burger::after {
+    width: calc(var(--menu-size) + 50%)
+}
+
+.container-menu-burger:active .menu-burger{
+    background-color: transparent;
+}
+
+.container-menu-burger:active .menu-burger::before{
+    transform: rotate(45deg);
+    width: var(--menu-size);
+}
+.container-menu-burger:active .menu-burger::after{
+    transform: rotate(-45deg);
+    width: var(--menu-size);
+}

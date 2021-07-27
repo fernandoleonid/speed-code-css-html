@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 0 50px;
+}
+
+.item{
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 10px #FFCC00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    height: 50px;
+    color: #FFCC00;
+    text-align: center;
+    font-style: italic;
+}
