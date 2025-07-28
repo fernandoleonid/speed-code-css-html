@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #0003;
+}
+.carrossel{
+    position: relative;
+    width: 80%;
+    height: 80%;
+    box-shadow: 0 0 16px #000;
+    border-radius: 12px;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    animation: slider 12s infinite, fade 4s;
+}
+
+.carrossel::after{
+    position: absolute;
+    content: var(--text-description);
+    width: 100%;
+    bottom: 0;
+    padding-block: 16px;
+    background-color: #0009;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+
+@keyframes slider {
+    0%, 33% {
+        background-image: url(./img/olhos-gato.jpg);
+        --text-description: "Olhos de gato!"
+    }
+    34%, 66% {
+        background-image: url(./img/olhos-cachorro.jpg);
+        --text-description: "Olhos de cachorro!"
+    }
+    67%, 100% {
+        background-image: url(./img/olhos-aguia.jpg);
+        --text-description: "Olhos de aguia!"
+    }
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    15%, 85% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
